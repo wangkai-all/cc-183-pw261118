@@ -1,0 +1,13 @@
+{
+  "name": "order-fee-allocation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "订单级费用分摊到商品行的本地数据加工应用（零依赖、确定性、版本化）",
+  "scripts": {
+    "test": "node --test tests/engine.test.js tests/invariant.test.js",
+    "smoke": "node tests/dom-smoke.js",
+    "serve": "python3 -m http.server 8765"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>订单费用分摊工作台 · 本地版</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>订单级费用分摊工作台</h1>
+    <span class="badge blue" id="hdr-order">订单 O-20261110-0087</span>
+    <span class="badge gray" id="hdr-stats"></span>
+    <span class="spacer"></span>
+    <span class="sub">纯本地运行 · 数据存于浏览器 localStorage · 金额按最小货币单位（分）整数运算</span>
+  </header>
+
+  <nav class="tabs">
+    <button data-tab="calc" class="active">计算工作台</button>
+    <button data-tab="source">源数据与版本</button>
+    <button data-tab="compare">版本/运行比较</button>
+    <button data-tab="runs">运行记录</button>
+  </nav>
+
+  <main>
+    <section id="tab-calc" class="tabpane active"></section>
+    <section id="tab-source" class="tabpane"></section>
+    <section id="tab-compare" class="tabpane"></section>
+    <section id="tab-runs" class="tabpane"></section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/engine.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
